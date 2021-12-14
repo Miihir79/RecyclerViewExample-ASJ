@@ -17,17 +17,21 @@ class ItemAdapter(var items:List<ItemClass>):RecyclerView.Adapter<ItemAdapter.It
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
+        // this function inflates the layout
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item,parent,false)
         return ItemViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
+        // this function binds or connects the data with UI
         holder.UID.text = items[position].Uid
         holder.Uname.text = items[position].UName
+        // loading images from URL using glide coil can also be used for the same
         Glide.with(holder.photo.context).load(items[position].Img).into(holder.photo)
     }
 
     override fun getItemCount(): Int {
+        // this function just returns the number of items
         return items.size
     }
 }

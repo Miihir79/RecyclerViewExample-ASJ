@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
 
         val URL = "https://picsum.photos/200" // to generate random images needs internet permission
 
+        // making a simple list of ItemClass objects to be displayed
         val list = listOf(
             ItemClass(1,"ABC","ABC@BCD",URL),
             ItemClass(2,"BCD","ABC@BCD",URL),
@@ -19,11 +20,12 @@ class MainActivity : AppCompatActivity() {
             ItemClass(4,"DEF","DEF@BCD",URL),
         )
 
-        val adapter = ItemAdapter(list)
+        val adapter = ItemAdapter(list)  // initializing the adapter
         val recycler : RecyclerView = findViewById(R.id.recycler)
 
         recycler.adapter = adapter  // attaching adapter that we made with our recycler
 
+        // helps us set custom arrangements of our items inside of the recyclerview
         recycler.layoutManager = LinearLayoutManager(this)
     }
 }
