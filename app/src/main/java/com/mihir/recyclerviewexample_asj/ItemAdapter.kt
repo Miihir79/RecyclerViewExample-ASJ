@@ -1,4 +1,4 @@
-package com.mihir.asj_recyclerexample
+package com.mihir.recyclerviewexample_asj
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +7,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.mihir.recyclerviewexample_asj.R
 
 class ItemAdapter(var items:List<ItemClass>):RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 

@@ -1,4 +1,4 @@
-package com.mihir.asj_recyclerexample
+package com.mihir.recyclerviewexample_asj
 
 import java.net.URL
 
