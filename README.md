@@ -1,3 +1,6 @@
 # RecyclerViewExample-ASJ
 
-This teaches you how a basic structure of recycler view is 
+This shows a basic structure of recyclerview and how we can add the data to recyclerview
+
+author:
+Mihir Shah
