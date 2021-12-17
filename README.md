@@ -11,3 +11,5 @@ This shows a basic structure of recyclerview and how we can add the data to recy
 
 ## Author 
 <a href="https://github.com/Miihir79">***Mihir Shah***</a> <br>
+
+  Some handwritten notes for recyclerview <a href="https://drive.google.com/file/d/1YkVRB98wfMTf1PNWcSl2bM_aFHAju_8E/view">here</a>
